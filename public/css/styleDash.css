@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@200;300&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1px;
+    scroll-behavior: smooth;
+    /* font-family: 'Work Sans', sans-serif; */
+    }
+
+    html {box-sizing: border-box;} 
+ 
+    *, *:before, *:after {box-sizing: inherit;}      
+
+*{
+    margin: 0;
+    padding: 0;
+  
+     
+}
+
+body{
+    background-color: rgb(222, 222, 231);
+}
+
+.profile{
+   display: flex;
+   align-items: center;
+   padding: 5px;
+   gap: 20px;
+
+}
+
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.box-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+   
+    
+
+}
+
+.box-img img{
+    width: 100%;
+     
+}
+
+.menu{
+    background-color:white;
+    color: black;
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+}
+
+.menu:hover{
+    width: 260px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 10px;
+    position: relative;
+  
+    height: 83%;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    display: flex;
+    
+    padding: 10px;
+    align-items: center;
+    gap: 30px;
+    margin: 5px 0;
+    font-weight: bold;
+    color: black;
+    
+
+}
+
+.menu li a:hover{
+    background-color: #bebebe;
+}
+
+.menu li a i{
+    font-size: 20px;
+}
+
+.log-out{
+   
+    position: absolute;
+    bottom: 0;
+     
+        
+    width: 92%;
+    
+   
+    
+   
+}
+
+.log-out .fa-sign-out{
+    color: red;
+   
+}
+
+.content {
+    background-color:white;
+    width: calc(100% - 60px);
+    position: absolute;
+    right: 0;
+    padding: 10px 0;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+     
+}
+
+.content nav{
+    
+    padding-left: 20px;
+    padding-right: 40px;
+    display: flex;
+    
+    align-items: center;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.search-int{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.search-int  i{
+    font-size: 25px;
+    
+}
+
+ 
+
+.links {
+    position: relative;
+    font-size: 25px;
+}
+
+.links .num{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    min-width: 15px; 
+    padding: 1px; 
+    height: 19px;
+    text-align: center;
+    font-size: 15px;
+  
+    color: white; 
+    position: absolute;
+    left: 12px;
+    top: 8px;
+
+}
+
+.bigcontainer{
+    display: flex;
+   
+}
+
+ 
+
+.cont2 {
+   
+    margin-top: 48px;
+    margin-left:60px ;
+    width: calc(100% - 60px);
+ 
+     
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+   
+     
+}
+
+.cont2 .home{
+    margin:20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+
+}
+
+.home .box{
+    height: 150px;
+    flex-basis: 150px;
+   background-color: rgb(253, 250, 254);
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    flex-grow: 1;
+    border-radius: 8px;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+    
+}
+
+.box  i{
+    font-size: 30px;
+    
+}
+
+.box .bbox{
+    background-color: rgba(117, 207, 243, 0.569);
+
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    
+}
+
+.box .bbox1{
+    background-color: rgba(147, 223, 158, 0.775);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    
+}
+
+.box .bbox2{
+    background-color: rgba(119, 13, 225, 0.405);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    
+}
+
+
+.box .bbox3{
+    background-color: rgba(239, 153, 5, 0.561);
+
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    
+}
+
+
+
+
+.box .data-info span{
+    font-size: 30px;
+}
+
+ #bx{
+    color: rgb(6, 173, 240);
+ }
+
+ #bx1{
+    color: rgb(7, 155, 9);
+ }
+
+ #bx3{
+    color: rgb(157, 6, 233);
+ }
+
+ #bx4{
+    color: rgb(230, 145, 0);
+ }
+
+
+
+
+/*    
+ 
+*form_create_job
+
+*/
+
+.form_create_job{
+    background-color: white;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+ 
+
+h1 {
+    text-align: start;
+  }
+  
+  .form_create_job label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000000; /* Label color for dark mode */
+  }
+  
+  .form_create_job input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #060606; /* Border color for dark mode */
+    border-radius: 5px;
+    margin-top: 5px;
+    
+    /* Text color for dark mode */
+    box-sizing: border-box;
+    
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .checkbox-label,
+  .radio-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666; /* Border color for dark mode */
+    border-radius: 3px;
+  }
+  
+  input[type="checkbox"]:checked + .checkmark,
+  input[type="radio"]:checked + .checkmark {
+    background-color: #007aff;
+    border: 2px solid #007aff;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked + .checkmark:after,
+  input[type="radio"]:checked + .checkmark:after {
+    display: block;
+  }
+  
+  input[type="checkbox"]:checked + .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  input[type="radio"]:checked + .checkmark:after {
+    left: 5px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .form_create_job .btn_inset {
+    background-color: #007aff; /* Button background color for dark mode */
+    color: #f2f2f2; /* Text color for dark mode */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .form_create_job button:hover {
+    background-color: #141415; /* Button background color for dark mode on hover */
+  }
+
+
+  /*    
+ 
+*display none button image and vidio
+
+*/
+
+.note-btn-group .note-insert {
+    display: none !important;
+}
+
+
+  /*    
+ --------------------------------------
+*TABLE JOBS
+---------------------------------------
+*/
+
+
+
+.jobs_table{
+    background-color: white;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.info_jobs_table{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.table_jobs{
+    width: 100%;
+    margin-top: 10px;
+    text-align: start;
+    padding: 20px;
+    
+ 
+}
+
+
+
+.table_jobs th {
+    padding: 10px;
+    border-bottom: 1px solid rgb(150, 149, 149);
+    text-align: start;
+}
+
+.table_jobs td {
+    padding: 15px;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    text-align: start;
+    
+}
+
+
+.table_jobs .btn_edit{
+
+   padding: 5px;
+   border: 1px solid rgb(13, 131, 58);
+   background-color: rgb(17, 178, 65);
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: 600;
+   color: white;
+}
+
+
+.table_jobs .btn_delete{
+
+    padding: 5px;
+    border: 1px solid rgb(237, 5, 5);
+    background-color: rgb(234, 8, 8);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+} 
+
+.jobs_search{
+    display: flex;
+    justify-content: space-between;
+     margin-top: 30px;
+     
+}
+
+.jobs_search .inpseach{
+    padding: 8px;
+    border: 1px solid #123;
+    height: 33px;
+    border-right: none;
+}
+
+.jobs_search .inpseach:focus{
+    border: none;
+}
+
+.jobs_search .btn_search{
+    background-color: rgb(0, 128, 255);
+     padding: 8px;
+     border: 0;
+     color: white;
+     height: 33px;
+}
+
+.jobs_search form{
+    display: flex;
+    align-items: center;
+    
+}
+
+.btn_jobs{
+    padding: 10px;
+    background-color: rgb(6, 149, 149);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 12;
+    transition: 1s;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 300px;
+    margin: 20% auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.modal_div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+   
+}
+
+.deleteform{
+    padding: 8px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.hideform{
+    padding: 8px;
+    background-color: rgb(2, 116, 19);
+    color: white;
+    border: 1px solid rgb(72, 210, 8);
+}
+
+  /*    
+ --------------------------------------
+* PROFILE
+---------------------------------------
+*/
+
+.contbigprofile{
+    display: flex;
+    flex-shrink: 20;
+    gap: 20px;
+
+}
+
+@media (max-width:600px) {
+    .contbigprofile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+        
+
+}
+
+.sec_profile1{
+    background-color: white;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  
+}
+
+
+
+.box_image_profile{
+   
+    border: 1px solid rgb(114, 114, 114);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.box_image_profile img{
+    width: 100%;
+    
+}
+
+.file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.file-input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+     
+    
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+.custom-file-label:hover {
+    background-color: #2980b9;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+
+.sec_profile2{
+    background-color: white;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    
+    flex-grow: 1;
+    
+    
+   
+
+}
+
+
+.sec_profile2 input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #060606; /* Border color for dark mode */
+  border-radius: 5px;
+  margin-top: 5px;
+  
+  /* Text color for dark mode */
+  box-sizing: border-box;
+  
+}
+
+
+.sec_profile2 label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000000; /* Label color for dark mode */
+  }
+
+  .sec_profile2 form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+
+  .sec_profile2 .btn_update_profile {
+    background-color: #007aff; /* Button background color for dark mode */
+    color: #f2f2f2; /* Text color for dark mode */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .sec_profile2 .btn_update_profile:hover {
+    background-color: #141415; /* Button background color for dark mode on hover */
+  }
+  
+
+
+.sec_profile3{
+    background-color: white;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+    padding: 20px;
+    margin: 20px 0;
+    flex-grow: 1;
+    
+
+}
+
+
+
+
+.sec_profile3 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #060606; /* Border color for dark mode */
+    border-radius: 5px;
+    margin-top: 5px;
+    
+    /* Text color for dark mode */
+    box-sizing: border-box;
+    
+  }
+  
+  
+  .sec_profile3 label {
+      display: block;
+      font-size: 16px;
+      margin-top: 10px;
+      color: #000000; /* Label color for dark mode */
+    }
+  
+    .sec_profile3 form{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+    }
+
+
+    .sec_profile3 .btn_update_profile {
+        background-color: #007aff; /* Button background color for dark mode */
+        color: #f2f2f2; /* Text color for dark mode */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      
+      .sec_profile3 .btn_update_profile:hover {
+        background-color: #141415; /* Button background color for dark mode on hover */
+      }
+
+
+        /*    
+ --------------------------------------
+* Applicants
+---------------------------------------
+*/
+
+      .bigdiv_applicants{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title_job{
+        background-color: white;
+        box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      .card_applicants{
+        background-color: white;
+        box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      .secound_applicants{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+       
+      }
+
+      .box_image_applicants{
+   
+        border: 1px solid rgb(114, 114, 114);
+        width: 110px;
+        height:110px;
+        border-radius: 50%;
+        overflow: hidden;
+
+    }
+    
+    .box_image_applicants img{
+        width: 100%;
+        
+    }
+
+    .info_applicants{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .div_compose_info_btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn_applicants{
+        display: flex;
+        
+        gap: 10px;
+    }
+
+    .donl_file{
+        background-color: #007aff; /* Button background color for dark mode */
+        color: #f2f2f2; /* Text color for dark mode */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+    .donl_file:hover {
+        background-color: #141415; /* Button background color for dark mode on hover */
+      }
+
+
+      .btn_apply{
+        background-color: #077a85; /* Button background color for dark mode */
+        color: #f2f2f2; /* Text color for dark mode */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+
+      .btn_apply:hover {
+        background-color: #141415; /* Button background color for dark mode on hover */
+      }
+
+
+      .bg_applicants{
+        background-color: rgba(43, 163, 10, 0.697);
+        color: white;
+      }
+
+
+      /*  
+      ------------------------------------
+      *CHART
+      ------------------------------------
+      */
+.chart{
+    background-color: white;
+    box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+    padding: 20px;
+    margin-bottom: 20px;
+      }
+
+      .chart2{
+        background-color: white;
+        box-shadow: 0 2rem 3rem  rgba(132, 139, 200, 0.18) ;
+        padding: 20px;
+        margin-bottom: 20px;
+         
+          }
+         
+      
+
+.bigchart{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
